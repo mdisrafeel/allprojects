@@ -1,0 +1,12 @@
+.containtr{
+    display: inline;
+    
+}
+.div1{
+    background-color: springgreen;
+    flex: 50%;
+}
+.div2{
+    background-color: sandybrown;
+    flex: 50%;
+}

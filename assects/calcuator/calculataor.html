@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            width: 290px;
+            height: 200px;
+            background-color:darkkhaki;
+            margin: auto;
+        }
+        .top-container{
+            width: 280px;
+            height: 150px;
+        
+        }
+        
+        .all-item{
+            width: 290px;
+            background-color:darkkhaki;
+        }
+        .bottom-container{
+            display: flex;
+            text-align: center;
+        }
+        .item2{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color:white;
+            text-align: center;
+            margin: 6px;
+        }
+        .item{
+            margin: 6px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color:rgb(189, 188, 188);
+            text-align: center;
+        }
+        p{
+            margin: 0;
+            padding: 15px;
+            font-weight: 600;
+            font-size: 25px;
+        }
+        i{
+            margin: 0;
+            padding: 20px;
+            font-weight: 600;
+            font-size: 25px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="top-container">
+        </div>
+        <div class="all-item">
+            <div class="bottom-container">
+                <div class="item"><p>C</p></div>
+                <div class="item"><p>%</p></div>
+                <div class="item"><i class="fa fa-window-close-o"></i></div>
+                <div class="item"><p>/</p></div>
+            </div>
+            
+            <div class="bottom-container">
+                <div class="item2"> <p>7</p> </div>
+                <div class="item2"><p>8</p></div>
+                <div class="item2"><p>9</p> </div>
+                <div class="item"><i class="fa fa-remove"></i></div>
+            </div>
+            <div class="bottom-container">
+                <div class="item2"> <p>4</p> </div>
+                <div class="item2"><p>5</p></div>
+                <div class="item2"><p>6</p></div>
+                <div class="item"> <i class="fa fa-minus"></i> </div>
+            </div>
+            <div class="bottom-container">
+                <div class="item2"> <p>1</p> </div>
+                <div class="item2"><p>2</p></div>
+                <div class="item2"><p>3</p></div>
+                <div class="item"> <i class="fa fa-plus"></i></div>
+                
+            </div>
+            <div class="bottom-container">
+                <div class="item2"> <p>00</p> </div>
+                <div class="item2"><p>0</p></div>
+                <div class="item2"><p>.</p></div>
+                <div class="item"><p>=</p></div>
+            </div>
+        </div>
+        
+    </div>    
+        <script>
+            $(document).on("click",".all-item div div p", function(e){
+                $('.top-container').text($(this).text());
+            })
+        </script>
+</body>
+</html>
