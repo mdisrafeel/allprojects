@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+        }
+        .container{
+            display: flex;
+            margin: 0;
+        }
+    
+        .one{
+            flex: 20%;
+            background-color: #E0E0E0;
+            
+        }
+        /* one */
+        .header{
+            display: flex;
+        }
+        .headerin{
+            flex: 20%;
+        }
+        .cricle{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-image: url(image/11.\ istockphoto.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 14px;
+            margin-top: 7px;
+        }
+        .headerout{
+            flex: 80%;
+            text-align: right;
+            border-right: 1px solid rgb(187, 181, 181);
+        }
+        .headerout ul li{
+            list-style-type: none;
+            display: inline;
+            margin-right: 30px;
+        }
+        .headerout ul li a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        i{
+            color: rgb(84, 101, 111);
+        }
+        /* main */
+        .main{
+            display: flex;
+            border-bottom: 1px solid rgb(211, 208, 208);
+        }
+       
+        /* all */
+        .chartbox{
+            height: 84vh;
+            overflow-y: scroll;
+        }
+        
+        .all{
+            display: flex;
+            background-color:#FFFFFF;
+        }
+        .all:hover{
+            background-color:#E0E0E0 ;
+        }
+        .gola{
+            flex: 25%;
+        }
+        .in{
+            width: 50px;
+            height: 50px;
+            background-image: url(image/12.\ istockphoto-.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .aa{
+            background-image: url(image/1.\ img_snowtops.jpg);
+        }
+        .bb{
+            background-image: url(image/10.\ duck-.jpg);
+        }
+        .cc{
+            background-image: url(image/16.\ istockphoto-.jpg);
+        }
+        .dd{
+            background-image: url(image/coffee.jpg);
+        }
+        .ee{
+            background-image: url(image/8.highway-7213206_960_720.jpg);
+        }
+        .ff{
+            background-image: url(image/2.\ img_mountains.jpg);
+        }
+        .text{
+            flex: 60%;
+            padding: 10px;
+            border-bottom: 1px solid rgb(211, 208, 208);
+        }
+        .day{
+            flex: 10%;
+            border-bottom: 1px solid rgb(211, 208, 208) ;
+            padding: 20px;
+        }
+        h2{
+            margin: 0;
+            font-weight: 400;
+            font-size:20px;
+        }
+        p{
+            margin: 0;
+            font-weight: 200;
+            font-size: 14px;
+        }
+         /* two */
+         .two{
+            flex: 80%;
+            /* background-color:#E0E0E0; */
+            /* background-image: url(../../image/whatsapp\ image.jpg); */
+            margin: 0;
+        }
+        .div1{
+            flex: 80%;
+            background-color:#FFFFFF;
+            text-align: center;
+            padding: 5px;
+    
+        }
+        .div1 [type=search]{
+            width: 350px;
+            height: 40px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #E0E0E0; 
+            font-size: 18px; 
+        }
+        .div2{
+            flex: 20%;
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            
+        }
+        /* nav */
+
+        .nav{
+            display: flex;
+            background-color: #E0E0E0;
+        }
+        .he{
+            flex: 10%;
+        }
+        .photo{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-image: url(image/11.\ istockphoto.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 15px;
+            margin-top: 7px;
+        }
+        .name{
+            flex: 20%;
+        }
+        .myname{
+            padding: 15px;
+        }
+        .she{
+            flex: 70%;
+            background-color: #E0E0E0;
+            text-align: right;
+        }
+        .she ul li{
+            margin-right: 30px;
+            display: inline;
+            list-style-type: none;
+        }
+        .she ul li a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .whatsapp{
+            height: 520px;
+            width: 100%;
+            background-image: url(../../image/8.highway-7213206_960_720.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: animation;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes animation
+        {
+            25%{
+                background-image: url(../../image/7.city-6818066_960_720.jpg);
+            }
+            50%{
+                background-image: url(../../image/chart\ 1.PNG);
+            }
+            70%{
+                background-image: url(../../image/8.highway-7213206_960_720.jpg);
+            }
+            100%{
+                background-image: url(../../image/9.\ city-6870803_960_720.jpg);
+            }
+        }
+        .isra{
+            background-color: #E0E0E0;
+            margin: 0;
+            display: flex;
+        }
+        .foter{
+            flex: 5%;
+            margin: auto;
+            margin-left: 20px;
+        }
+        .foter2{
+            flex: 5%;
+            margin: auto;
+            margin-left: 10px;
+        }
+        .border{
+            flex: 85%;
+            padding: 10px;
+            /* background-color: aqua; */
+        }
+        .border [type=text]{
+            width: 760px;
+            height: 10px;
+            border-radius: 10px;
+            font-size: 19px; 
+            padding: 20px;
+        }
+         
+        .last{
+            flex: 5%;
+            margin: auto;
+            margin-left: 20px;
+        }
+        .isra i{
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <div class="header"> 
+                <div class="headerin"> <div class="cricle"> </div>
+                </div> 
+                    <div class="headerout">
+                        <ul>
+                            <li> <a href=""><i class="fa fa-group"> </i> </a> </li>
+                            <li> <a href=""><i class="fa fa-circle-o-notch"> </i> </a> </li>    
+                            <li> <a href=""><i class="fa fa-commenting-o"></i> </a> </li> 
+                            <li> <a href=""> <i class="fa fa-ellipsis-v"></i></a></li>
+                        </ul>
+                    </div> 
+            </div>
+            <div class="main">
+                <div class="div1">
+                    <input type="search" placeholder="Search or start new chat">
+                </div>
+                <div class="div2">
+                    <a href="">  <i class="fa fa-tasks"></i> </a>
+                </div>
+            </div>
+            <!-- whatsApp -->
+            <div class="chartbox">
+
+                <div class="all">
+                    <div class="gola">
+                        <div class="in"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Name</h2>
+                        <p>this is a whatsApp</p>
+                    </div>
+                    <div class="day"> <p>sunday</p> </div>
+                </div>
+    
+                <div class="all">
+                    <div class="gola">
+                        <div class="in aa"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Ajeet</h2>
+                        <p>Ok bhai</p>
+                    </div>
+                    <div class="day"> <p>today</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in bb"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Raja</h2>
+                        <p>hiii</p>
+                    </div>
+                    <div class="day"> <p>yestarday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in cc"></div>
+                    </div>
+                    <div class="text">
+                        <h2>naseem</h2>
+                        <p>hello bhai</p>
+                    </div>
+                    <div class="day"> <p>20-12-2022</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in dd"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Bhai</h2>
+                        <p>Good night</p>
+                    </div>
+                    <div class="day"> <p>monday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in ee"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Dost</h2>
+                        <p>Kya hal hain </p>
+                    </div>
+                    <div class="day"> <p>sunday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in ff"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Raj</h2>
+                        <p>Hi sir,hello</p>
+                    </div>
+                    <div class="day"> <p>yestarday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in ee"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Sir</h2>
+                        <p>Hello sir </p>
+                    </div>
+                    <div class="day"> <p>sunday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Name</h2>
+                        <p>this is a whatsApp</p>
+                    </div>
+                    <div class="day"> <p>sunday</p> </div>
+                </div>
+    
+                <div class="all">
+                    <div class="gola">
+                        <div class="in aa"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Ajeet</h2>
+                        <p>Ok bhai</p>
+                    </div>
+                    <div class="day"> <p>today</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in bb"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Raja</h2>
+                        <p>hiii</p>
+                    </div>
+                    <div class="day"> <p>yestarday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in cc"></div>
+                    </div>
+                    <div class="text">
+                        <h2>naseem</h2>
+                        <p>hello bhai</p>
+                    </div>
+                    <div class="day"> <p>20-12-2022</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in dd"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Bhai</h2>
+                        <p>Good night</p>
+                    </div>
+                    <div class="day"> <p>monday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in ee"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Dost</h2>
+                        <p>Kya hal hain </p>
+                    </div>
+                    <div class="day"> <p>sunday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in ff"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Raj</h2>
+                        <p>Hi sir,hello</p>
+                    </div>
+                    <div class="day"> <p>yestarday</p> </div>
+                </div>
+                <div class="all">
+                    <div class="gola">
+                        <div class="in ee"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Sir</h2>
+                        <p>Hello sir </p>
+                    </div>
+                    <div class="day"> <p>sunday</p> </div>
+                </div>
+
+            </div>
+          
+            <!-- two -->
+        </div>
+        <div class="two">
+            <div class="nav">
+                <div class="he">
+                    <div class="photo"></div>
+                </div>
+                <div class="name">
+                    <div class="myname"><h2> Naseem </h2></div>
+                </div>
+                <div class="she">
+                    <ul>
+                        <li><a href=""> <i class="fa fa-search"></i> </a></li>
+                        <li><a href=""> <i class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="window">
+                <div class="whatsapp">
+            
+                </div>
+            </div>
+            <div class="isra">
+                <div class="foter">
+                        <a href=""> <i class="fa fa-smile-o"> </i> </a>
+                </div>
+                <div class="foter2">
+                    <a href=""> <i class=" 	fa fa-file-image-o"></i></a>
+                </div>
+                <div class="border">
+                   <input type="text" placeholder="Type of message"> 
+                </div>
+                <div class="last">
+                    <a href=""> <i class="fa fa-microphone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

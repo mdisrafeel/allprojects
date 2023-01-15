@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* css of header */
+        
+        body{
+            margin: 0;
+            background-image: linear-gradient(to left,rgb(246, 199, 207),rgb(188, 188, 236),rgb(225, 176, 176),rgb(174, 231, 231),rgb(243, 224, 114));
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            height: 100px;
+           
+        }
+        .left-header{
+            flex: 25%;
+        }
+        .header ul li{
+            list-style-type: none;
+            display: inline;
+            padding: 40px;
+        }
+        .header ul li a{
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .header a:hover{
+            color:tomato;
+            font-size: 30px;
+            transition: 1s all;
+        }
+        .right-header{
+            flex: 75%;
+            text-align: end;
+            margin-right: 50px;
+        }
+        
+        /* css for nav */
+        .nav{
+           
+            
+        }
+        .item{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 80px;
+        }
+        .item ul li{
+            list-style-type: none;
+            display: inline;
+            padding: 40px;
+        }
+        .item ul li a{
+            text-decoration: none;
+            font-size: 28px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(red,green,gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .item ul li a:hover{
+            color:darkkhaki ;
+            font-size: 32px;
+            transition: 1s;
+        }
+        /* anmation */
+        .anmation{
+            width: 100%;
+            height: 500px;
+            background-image: url(../image/10.\ duck-.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            animation-name: img;
+            animation-duration: 8s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes img{
+            20%{
+                background-image: url(../image/11.\ istockphoto.jpg);
+            }
+            40%{
+                background-image: url(../image/6.leaves-7590923_960_720.jpg);
+            }
+            60%{
+                background-image: url(../image/9.\ city-6870803_960_720.jpg);
+            }
+            80%{
+                background-image: url(../image/7.city-6818066_960_720.jpg);
+            }
+            100%{
+                background-image: url(../image/8.highway-7213206_960_720.jpg);
+            }
+        }
+
+         /* section */
+        .grid{
+            text-align: center;
+            width: 100%;
+            margin-bottom: 60px;
+            
+        }
+        .second{
+            display: flex;
+            background-image: linear-gradient(to right bottom,rgb(250, 232, 144),rgb(142, 221, 221),rgb(231, 185, 192),rgb(229, 170, 170));
+            width: 80%;
+            margin:20px auto;
+            border-radius: 10px;
+        }
+        .div1{
+            padding: 10px;
+            
+        }
+        .div2{
+            margin: auto;
+            padding: 30px;
+            animation: bounce;
+            animation-duration: 2s;
+        }
+        h3{
+            text-align: center;
+        }
+        h4{
+            font-size: 25px;
+            color: antiquewhite;
+        }
+        p{
+            margin: 0;
+            font-size: 17px;
+        }
+        .blogs{
+            display: flex;
+            margin-bottom: 40px;
+        }
+        .blogs-item{
+            margin: 20px;
+            width: 300px;
+            height: 300px;
+            background-color:red;
+            margin: auto;
+            position: relative;
+        }
+        .item3{
+            background-color: goldenrod;
+        }
+        
+        .item4{
+            background-color:lightseagreen;
+        }
+        .item5{
+            background-color: cornflowerblue;
+        }
+        .cricle{
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            background-image: url(../image/OIP.jfif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            border-radius: 50%;
+            margin-bottom: 100px;
+            position: absolute;
+            left: 38%;
+            top: -40px;
+            border: 2px solid white;
+        }
+        .cricle2{
+            background-color: goldenrod;
+            background-image: url(../image/th\ \(1\).jfif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cricle3{
+            background-color: lightseagreen;
+            background-image: url(../image/R.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .cricle4{
+            background-color: cornflowerblue;
+            background-image: url(../image/6640607.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text{
+            
+            margin-top: 10px;
+            padding: 20px;
+        }
+        h1{
+          color: aliceblue;
+          text-align: center;
+        }
+        p{
+           margin: 0;
+           color:black;
+        }
+
+        .card-container{
+            background-image: url(../image/3-Emerging-Innovations-in-Technology-Impact-Cyber-Security-720x430.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 97%;
+            height: 600px;
+            margin: auto;
+            margin: 20px;
+            position: relative;
+            
+        }
+        .card-div{
+            display: flex;
+            margin-left: 180px;
+            margin-top: 400px;
+            position: absolute;
+        }
+        
+        .main{
+            width: 320px;
+            height: 420px;
+            border: 2px solid white;
+            margin: 20px;
+            background-color: rgb(215, 199, 195);
+        }
+        .img{
+            margin: 0;
+        }
+        img{
+            width: 320px;
+            height: 250px;
+            margin: 0;
+        }
+        .text{
+           
+            margin: 0;
+        }
+        .in{
+            margin: auto;
+        }
+        .in p{
+            margin: 0;
+        }
+        .in h2{
+            margin: 0;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-header">
+                <ul>
+                    <li><a href=""><i class="fa fa-phone"></i> </a></li>
+                    <li><a href=""><i class="fa fa-envelope"> </i> </a></li>
+                </ul>
+            </div>
+            <div class="right-header">
+                <ul>
+                    <li><a href=""> <i class="fa fa-facebook-official"></i> </a></li>
+                    <li><a href=""> <i class="fa fa-instagram"></i> </a></li>
+                    <li><a href=""> <i class="fa fa-whatsapp"></i> </a></li>
+                    <li><a href=""> <i class="fa fa-youtube"></i> </a></li>
+                    <li><a href=""> <i class="fa fa-linkedin-square"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav bar -->
+        <div class="nav">
+            <div class="item">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- anmation -->
+        <div class="anmation">
+            
+        </div>
+        <!--  -->
+        <div class="grid">
+            <section class="second">
+        
+                <div class="div1"> <h3>Image</h3> <img src="../image/7.city-6818066_960_720.jpg" height="300px" height="300px"></div>
+                <div class="div2 animate__animated animate__bounce" >
+                    <h4>About Image in Lorm</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt 
+                    laborum quo ullam saepe beatae
+                    <p style="text-indent:50px ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Erro
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt 
+                   laborum quo ullam  provident commodi. Enim.</p>
+                </div>
+            </section>
+
+            <section class="second">
+        
+                <div class="div1"> <h3>Image</h3> <img src="../image/1. img_snowtops.jpg" height="300px" height="300px"></div>
+                <div class="div2">
+                    <h4>About Image in Lorm</h4>
+                    <p>Lorem ipsum dolor,saepe beatae nobis sit amet consectetur adipisicing elit. 
+                    laborum quo ullam saepe beataeLorem ipsum dolor sit amet consectetur adipisicing elit. Erro
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt 
+                    laborum quo ullam  provident commodi. Enim
+                    <p style="text-indent:70px ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Erro
+                   Lorem ipsum dolor sit amet adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit. Erro
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam itaque, temporibus corrupt 
+                   laborum quo ullam  provident commodi. Enim. Maxime aperiam itaque, temporibus corrupt 
+                   laborum . Enim.</p>
+                </div>
+            </section>
+        </div>
+        <!-- blogs -->
+        <div class="blogs">
+            <div class="blogs-item">
+                <div class="cricle"></div>
+                <div class="text">
+                    <h1>About SEO</h1> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ex earum mollitia illo
+                    temporibus vitae, impedit dolores quasi ipsam molestiae, obcaecati unde quidem ad reprehenderit commodi ea fugiat molestias harum.</p>
+                </div>
+            </div>
+            <div class="blogs-item item3">
+                <div class="cricle cricle2"></div>
+                <div class="text">
+                    <h1>Content Writing</h1> <p>Dolor sit amet, consectetur adipisicing  ex earum mollitia illo
+                    temporibus vitae, impedit dolores quasi ipsam molestiae, obcaecati unde quidem ad repnderit commodi ea fugiat 
+                    emporibus vitae, impedit dolores quasi ipsam molestiae, obcaecati unde quidem ad molestias harum.</p>
+                </div>
+            </div>
+            <div class="blogs-item item4">
+                <div class="cricle cricle3"></div> 
+                <div class="text">
+                    <h1>Digital Marketing</h1> <p>Ipsum dolor sit amet, consectetur adipisicing  ex earum mollitia illo
+                    temporibus vitae, impedit dolores quasi ipsam molestiae, obcaecati unde quidem ad repnderit quasi ipsam molestiae, obcaecati unde quidem.</p>
+                </div>
+            </div>
+            <div class="blogs-item item5"> 
+                <div class="cricle cricle4"></div>
+                <div class="text">
+                    <h1>Web Design</h1> <p> This is a ipsum dolor sit amet, consectetur adipisicing  ex earum mollitia illo
+                    temporibus vitae, impedit dolores quasi ipsam molestiae, obcaecati unde quidem ad repnderit quasi ipsam molestiae, obcaecati unde quidem ad molestias.</p>
+                </div>
+            </div>
+        </div>
+        <!-- card -->
+        <div class="card-container">
+            <div class="card-div">
+                    <div class="main">
+                        <div class="img">
+                            <img src="../image/1. img_snowtops.jpg " >
+                        </div>
+                        <div class="text">
+                            <div class="in">
+                                <P>bseb.com 12min</P>
+                                <h2>Recommended by Pocket 504 Gateway Time-out</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima Minima, neque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="img">
+                            <img src="../image/14.istockphoto-.jpg">
+                        </div>
+                        <div class="text">
+                            <div class="in">
+                                <P>bseb.com 12min</P>
+                                <h2>Recommended by Pocket 504 Gateway Time-out</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima Minima, neque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="img">
+                            <img src="../image/12. istockphoto-.jpg ">
+                        </div>
+                        <div class="text">
+                            <div class="in">
+                                <P>bseb.com 12min</P>
+                                <h2>Recommended by Pocket 504 Gateway Time-out</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima Minima, neque.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
