@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="assects/revision.css" > -->
+    <style>
+        .container{
+            display: flex;
+            
+        }
+        .div1{
+            background-color: coral;
+            flex: 40%;
+        }
+        .div2{
+            background-color: springgreen;
+            flex: 60%;
+           
+        }
+        div ul{
+            list-style-type: none;
+        }
+        div ul li a{
+            text-decoration: none;
+            font-size: 35px;
+            margin: auto;
+            padding: 30px;
+            margin-left: 30PX;
+            color: azure;
+        }
+        div ul li{
+            display: inline;
+        }
+        div ul li a:hover{
+            color: black;
+            font-size: 40px;
+        }
+        /* section */
+        .one{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin-left: 10px;
+            border: 5px solid black;
+        }
+        .one:nth-child(even)
+        {
+            background-image: url(image/10.\ duck-.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+       .one:nth-child(odd)
+       {
+        background-image: url(image/9.\ city-6870803_960_720.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       /* all */
+       *{
+        box-sizing: border-box;
+       }
+       .all{
+        border: 1px solid;
+        margin-top: 30PX;
+       }
+       .two{
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(red,blue,rgb(55, 128, 55),yellow) ;
+            border-radius: 50%;
+       }
+       .three{
+        border: 1px solid;
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+       }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="div1"> 
+            <ul>
+                <li> <a href="mailto:abc@gmail.com">Email</a> </li>
+                <li> <a href="tel:123456">Phone</a></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <ul >
+                <li> <a href="">Facebook</a> </li>
+                <li> <a href="">YouTube</a></li>
+                <li> <a href="">Instagram</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+                <div class="one"> </div>
+                <div class="one"> </div>
+                <div class="one"> </div>
+                <div class="one"> </div>
+                <div class="one"> </div>
+        </div>
+    </section>
+    <section>
+        <div class="all">
+            <div class="two"> </div>
+        </div>
+    </section>
+
+</body>
+</html>

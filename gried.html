@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+        .contener{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px 100px;
+            column-gap: 20px;
+            row-gap: 20px;
+            
+        }
+        .item{
+            background-color: rgb(236, 153, 153);
+        }
+        .item:nth-child(even){
+            background-color: yellow;
+        }
+        .header{
+            grid-column-start:1;
+            grid-column-end: 5;
+        }
+        .div1{
+            grid-row-start: 3;
+            grid-row-end: 6;
+            grid-column: 1 / span 2;
+        }
+        ::-webkit-scrollbar{
+            width: 18px;
+            background-color: black;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: pink;
+            border-radius: 10px;
+        }
+        @media screen and (max-width:480px)
+        {
+           body{
+            background-color: tan;
+           }
+           .contener{
+            flex-direction: column;
+           }
+        }
+        @media screen and (min-width:481px) and (max-width:768px) 
+        {
+            body{
+                background-color: darkcyan;
+            }
+            .contener{
+                flex-direction: column;
+            }
+        }
+        @media screen and (min-width:769) and (max-width:1024)
+        {
+            body{
+                background-color: tomato;
+            }    
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contener">
+        <div class="item header"> <h1>this ia 1st</h1></div>
+        <div class="item"><h1>this is 2</h1></div>
+        <div class="item"><h1>this is a 3</h1></div>
+        <div class="item"><h1>this is a  4th</h1></div>
+        <div class="item"><h1>this is 5</h1></div>
+        <div class="item div1"><h1>this is a 6</h1></div>
+        <div class="item"><h1>this is a  7th</h1></div>
+        <div class="item "> <h1>8</h1> </div>
+        <div class="item"> <h1>this ia 9</h1></div>
+        <div class="item"><h1>this is 10</h1></div>
+        <div class="item"><h1>this is a 11</h1></div>
+        <div class="item"><h1>this is a  12th</h1></div>
+        <div class="item"><h1>this is a  14th</h1></div>
+    </div>
+</body>
+</html>

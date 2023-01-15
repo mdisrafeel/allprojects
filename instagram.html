@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body{
+        background-color: rgb(224, 224, 224);
+    }
+    *{
+        margin: 0;
+    }
+        .flex-container{
+            width:200px;
+    }
+    /* left container */
+   
+    .left{
+        background-color: burlywood;
+        height: 744px;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+    .item{
+        width: 250px;
+        flex: 7%;
+        height: 40px;
+    }
+    h1{
+        padding: 30px;
+        font-family:Jokerman;
+        margin: 0;
+        font-size: 25px;
+        margin-left: 14px;
+    }
+    .medil{
+       flex: 70%;
+    }
+    
+    .medil ul li{
+        margin: 10px;
+        list-style-type: none;
+        margin-left: 0;
+    }
+    .medil ul li a{
+        text-decoration: none;
+        margin-left: 0;
+        font-size: larger;
+        color: black;
+        font-family: var(--font-family-system)
+    }
+    .medil ul li a i{
+        font-size: 27px;
+        margin: 10px;
+    }
+    .last{
+        flex: 7%;
+        margin-top: 20px;
+        font-size: larger;
+        margin-left: 23px;
+        
+    }
+    .last a{
+        text-decoration: none;
+        color:black ;
+    }
+    .last a i{
+        font-size: 27px;
+        margin: 20px;
+    }
+    /* right container */
+    .right{
+        height: auto;
+        padding: 20px;
+        margin-left: 350px;
+    }
+    .fist{
+        background-color: #fff;
+        display: flex;
+        width: 500px;
+        margin-left: 150px;
+        border-radius: 10px;
+    }
+    .cricle{
+        margin: 10px;
+    }
+    p{
+        text-align: center;
+    }
+    .div1{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid;
+    }
+    .second{
+        background-color: #fff;
+        width: 500px;
+        margin-top: 20px;
+        margin-left: 150px;
+        border-radius: 10px;
+    }
+    .top{
+        display: flex;
+        padding: 10PX;
+    }
+    .name{
+       flex: 10%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid;
+    }
+    .para{
+        flex: 85%;
+        padding: 10PX;
+    }
+    .icon{
+        flex: 5%;
+        padding: 10PX;
+        margin-left: 20PX;
+        font-size: larger;
+    }
+    .third{
+        display: flex;
+    }
+    .left-icon{
+        flex: 80%;
+        margin: 10px;
+        
+    }
+    .right-icon{
+        flex: 20%;
+        margin: 10px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .third i{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .four{
+        margin-left: 20px;
+        border-bottom: 1px solid gray;
+    }
+    h4{
+        margin-bottom: 10px;
+    }
+    .four p{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .five{
+        display: flex;
+        padding: 10px;
+    }
+    .left-comment{
+        flex: 10%;
+        margin-left: 10px;
+    }
+    .comment{
+        flex: 85%;
+        padding: 8px;
+    }
+    h5{
+        font-weight:800;
+        font-size: 17px;
+    }
+    .left-comment i{
+        font-size: 30px;
+    }
+    .right-comment{
+        flex: 10%;
+        padding: 8px;
+    }
+    .right-comment a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+    @media screen and (max-width:480px) {
+        body{
+            background-color: burlywood;
+        }
+        .container{
+            display: none;
+           
+        }
+        .all{
+            margin-left: 0;
+           
+        }
+        .main{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left container">
+            <div class="item">
+                <h1>Instagram</h1>
+            </div>
+            <div class="medil">
+                    <ul>
+                        <li><a href=""> <i class="	fa fa-home"></i> Home</a></li>
+                        <li><a href=""> <i class="	fa fa-search"></i> Search</a></li>
+                        <li><a href=""> <i class="fa fa-check-circle-o"></i> Explore</a></li>
+                        <li><a href=""> <i class="	fa fa-toggle-right"></i> Reels</a></li>
+                        <li><a href=""> <i class="fa fa-paper-plane-o"></i> Message</a></li>
+                        <li><a href=""> <i class="	fa fa-heart-o"></i> Notification</a></li>
+                        <li><a href=""> <i class="fa fa-plus-square-o"></i> Create</a></li>
+                        <li><a href=""> <i class="fa fa-circle-o"></i> Profile</a></li>
+                    </ul>
+            </div>
+            <div class="last">
+                <a href=""> <i class="fa fa-bars"></i> More</a>
+            </div>
+        </div>
+
+        <!-- right -->
+        <div class="right all">
+            <div class="fist main">
+                <div class="cricle"> 
+                    <div class="div1" style="background-image: url(image/1.\ img_snowtops.jpg); 
+                    background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                    <div class="div2">
+                        <P> nameem</P>
+                    </div>
+                </div>
+                <div class="cricle"> 
+                    <div class="div1" style="background-image: url(image/4.\ img_nature.jpg); 
+                    background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                    <div class="div2">
+                        <P> raj</P>
+                    </div>
+                </div>
+                <div class="cricle"> 
+                    <div class="div1" style="background-image: url(image/12.\ istockphoto-.jpg); 
+                    background-position: center; background-repeat: no-repeat; background-size: cover;" ></div>
+                    <div class="div2">
+                        <P> ram</P>
+                    </div>
+                </div>
+                <div class="cricle"> 
+                    <div class="div1" style="background-image: url(image/9.\ city-6870803_960_720.jpg); 
+                    background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                    <div class="div2">
+                        <P>aayan</P>
+                    </div>
+                </div>
+            </div>
+            <div class="second main">
+                <div class="top">
+                    <div class="name"></div>
+                    <div class="para"> Nameem12893</div>
+                    <div class="icon"> <i class="	fa fa-ellipsis-h"></i> </div>
+                </div>
+                <div class="img">
+                    <img src="image/7.city-6818066_960_720.jpg" alt="" width="500px" height="500px">
+                </div>
+                <div class="third">
+                    <div class="left-icon">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-comment-o"></i>
+                        <i class="fa fa-paper-plane-o"></i>
+                    </div>
+                    <div class="right-icon">
+                        <i class="fa fa-bookmark-o"></i>
+                    </div>
+                </div>
+                <div class="four">
+                    <div class="like">
+                        <h4>14 likes</h4>
+                        <p>View all 4 comment</p>
+                        <span>21 Hours age</span>
+                    </div>
+                </div>
+                <div class="five">
+                    <div class="left-comment">
+                       <i class="fa fa-frown-o"></i>
+                    </div>
+                    <div class="comment"><h5>Add a comment</h5></div>
+                    <div class="right-comment">
+                        <a href="">post</a>
+                    </div>
+                </div>
+            </div>
+            <div class="second  main">
+                <div class="top">
+                    <div class="name"></div>
+                    <div class="para"> raj123</div>
+                    <div class="icon"> <i class="	fa fa-ellipsis-h"></i> </div>
+                </div>
+                <div class="img">
+                    <img src="image/coffee.jpg" alt="" width="500px" height="500px">
+                </div>
+                <div class="third">
+                    <div class="left-icon">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-comment-o"></i>
+                        <i class="fa fa-paper-plane-o"></i>
+                    </div>
+                    <div class="right-icon">
+                        <i class="fa fa-bookmark-o"></i>
+                    </div>
+                </div>
+                <div class="four">
+                    <div class="like">
+                        <h4>49 likes</h4>
+                        <p>View all 8 comment</p>
+                        <span>2 Hours age</span>
+                    </div>
+                </div>
+                <div class="five">
+                    <div class="left-comment">
+                       <i class="fa fa-frown-o"></i>
+                    </div>
+                    <div class="comment"><h5>Add a comment</h5></div>
+                    <div class="right-comment">
+                        <a href="">post</a>
+                    </div>
+                </div>
+            </div>
+            <div class="second  main">
+                <div class="top">
+                    <div class="name"></div>
+                    <div class="para"> ram289</div>
+                    <div class="icon"> <i class="	fa fa-ellipsis-h"></i> </div>
+                </div>
+                <div class="img">
+                    <img src="image/13.istockphoto.jpg" alt="" width="500px" height="500px">
+                </div>
+                <div class="third">
+                    <div class="left-icon">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-comment-o"></i>
+                        <i class="fa fa-paper-plane-o"></i>
+                    </div>
+                    <div class="right-icon">
+                        <i class="fa fa-bookmark-o"></i>
+                    </div>
+                </div>
+                <div class="four">
+                    <div class="like">
+                        <h4>119 likes</h4>
+                        <p>View all 80 comment</p>
+                        <span>4 Hours age</span>
+                    </div>
+                </div>
+                <div class="five">
+                    <div class="left-comment">
+                       <i class="fa fa-frown-o"></i>
+                    </div>
+                    <div class="comment"><h5>Add a comment</h5></div>
+                    <div class="right-comment">
+                        <a href="">post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

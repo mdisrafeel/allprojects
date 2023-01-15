@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            background-image: url(image/12.\ istockphoto-.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            animation-name: my;
+            animation-delay: 4s;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            margin: auto;
+
+        }
+        @keyframes  my{
+            from{
+                background-color: crimson;
+                transform: rotate(180deg);
+            }
+        }
+        .animation{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            animation-name: name;
+            animation-duration: 4s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+
+        }
+        @keyframes name
+        {
+            from{
+                background-image: url(image/4.\ img_nature.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transform: rotate(360deg);
+            }
+            to{
+                background-color: coral;
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one">   </div>
+    <div class="animation"> </div>
+</body>
+</html>

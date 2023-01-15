@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 150px;
+            height: 150px;
+            background-color: springgreen;
+            position: absolute;
+            animation-name: div;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 50%;
+        }
+        @keyframes div
+        {
+            0%
+            {
+                top:0;
+                left:0;
+            }
+            10%
+            {
+                left:200px;
+                top:0;
+                transform: rotate(60deg);
+                background-color: darkmagenta;
+            }
+            20%{
+                top: 200px;
+                left: 200px;
+                transform: rotate(120deg);
+                background-color: aqua;
+            }
+            30%{
+                left: 400px;
+                top: 200px;
+                transform: rotate(180deg);
+                background-color: darkgoldenrod;
+            }
+            40%{
+                top: 400px;
+                left: 400px;
+                transform: rotate(240deg);
+                background-color: violet;
+            }
+            50%{
+                left: 600px;
+                top:400px;
+                transform: rotate(300deg);
+                background-color: cornflowerblue;
+            }
+            60%{
+                top: 600px;
+                left:600px;
+                transform: rotate(280deg);
+                background-color: sienna;
+            }
+            70%{
+                left: 800px;
+                top:600px;
+                transform: rotate(360deg);
+                background-color:yellow;
+            }
+        }
+        .two{
+            width: 150px;
+            height: 150px;
+            background-image: url(image/10.\ duck-.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            animation-name:my;
+            animation-duration:12s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 50%;
+        }
+        @keyframes my
+        {
+            0%
+            {
+                top:0;
+                left:0;
+            }
+            10%
+            {
+                left:200px;
+                top:0;
+                transform: rotate(60deg);
+                
+            }
+            20%{
+                top: 200px;
+                left: 200px;
+                transform: rotate(120deg);
+                
+            }
+            30%{
+                left: 400px;
+                top: 200px;
+                transform: rotate(180deg);
+               
+            }
+            40%{
+                top: 400px;
+                left: 400px;
+                transform: rotate(240deg);
+                
+            }
+            50%{
+                left: 600px;
+                top:400px;
+                transform: rotate(300deg);
+              
+            }
+            60%{
+                top: 600px;
+                left:600px;
+                transform: rotate(280deg);
+                
+            }
+            70%{
+                left: 800px;
+                top:600px;
+                transform: rotate(360deg);
+               
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="one"> </div>
+    <div class="two"> </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .all{
+            border: 3px solid salmon;
+            margin-top: 20px;   
+        }
+        .head{
+            background-color:gold;
+            height: 70px;
+        }
+        
+        .footer{
+            background-color: gold;
+            height: 60px;
+            padding: 10px;
+        }
+        /* container */
+        .container{
+            display: flex;
+        }
+        .one{
+            flex: 20%;
+            padding: 20px;
+        }
+        div ul{
+            list-style-type: none;
+        }
+        div ul li{
+            margin: 10px;
+            background-color: blue;
+            font-size: 30px;
+            margin-right: 40px;
+            margin-left: 0;
+            color: beige;
+        }
+        div ul li:hover{
+            background-color: rgb(92, 134, 208);
+        }
+        .two{
+            flex: 80%;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        h1{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all ">
+        <div class="head my">
+            <h1>This is a header</h1>
+        </div>
+       
+        <div class="container">
+            <div class="one"> 
+                <ul>
+                    <li>Flight</li>
+                    <li>City</li>
+                    <li>Island</li>
+                    <li>Food</li>
+                </ul>
+            </div>
+            <div class="two is">
+                <h1>The City</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a sapiente voluptatibus deserunt totam eius.
+                 Voluptate culpa pariatur architecto dolorem ipsa laborum eaque, fuga, minus nostrum velit nihil corrupti
+                 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a sapiente voluptatibus deserunt totam eius.
+                Voluptate culpa pariatur architecto 
+                facilis.</p>
+                <p style="text-indent: 200px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a sapiente voluptatibus deserunt totam eius.
+                    Voluptate culpa pariatur architecto dolorem ipsa laborum eaque, fuga, minus nostrum velit nihil corrupti
+                    t totam eius</p>
+            </div>
+        </div>
+
+        <div class="footer rehan">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</body>
+</html>
